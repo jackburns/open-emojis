@@ -5,12 +5,14 @@ import "./SearchInput.css";
 
 class SearchInput extends PureComponent {
   handleChange = event => {
-    this.props.onChange(event);
+    if (event) {
+      this.props.onChange(event.target.value);
+    }
   };
 
   render() {
     return (
-      <div className="component-search-input">
+      <div className="search-input">
         <div>
           <input onChange={this.handleChange} />
         </div>

@@ -1,9 +1,9 @@
-import React, { PureComponent } from "react";
+import React, { Component } from "react";
 import Header from "./Header";
 import SearchInput from "./SearchInput";
 import "./App.css";
 
-class App extends PureComponent {
+class App extends Component {
   constructor(props) {
     super(props);
   }
@@ -14,7 +14,7 @@ class App extends PureComponent {
 
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <Header />
         <SearchInput onChange={this.handleSearchChange} />
       </div>
