@@ -13,13 +13,12 @@ class SearchInput extends PureComponent {
   render() {
     return (
       <div className="search-input">
-        <div>
-          <input onChange={this.handleChange} />
-        </div>
+        <input onChange={this.handleChange} />
       </div>
     );
   }
 }
+
 SearchInput.propTypes = {
   onChange: PropTypes.func.isRequired,
 };
