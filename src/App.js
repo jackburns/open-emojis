@@ -4,10 +4,6 @@ import SearchInput from "./SearchInput";
 import "./App.css";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   handleSearchChange = input => {
     console.log(input);
   };
